@@ -115,15 +115,17 @@ public class Baidtest {
     }
 
     public static void main (String args[]) throws IOException{
-        String ak ="dR9SjyBtlRcbLGKGmbtcrdiYMM5CKKxw";
-        Baidtest baidtest = new Baidtest();
-        String  o [] =baidtest.getCoordinate("华为西安研究所",ak);
-        String [] p =baidtest.getAddr(o[0],o[1],ak);
-        System.out.println("精度--->"+o[0]);
-        System.out.println("维度--->"+o[1]);
-        System.out.println("省份--->"+p[0]);
-        System.out.println("城市--->"+p[1]);
-        System.out.println("县/区--->"+p[2]);
+        
+//        String ak ="dR9SjyBtlRcbLGKGmbtcrdiYMM5CKKxw";
+//        Baidtest baidtest = new Baidtest();
+//        String  o [] =baidtest.getCoordinate("华为西安研究所",ak);
+//        String [] p =baidtest.getAddr(o[0],o[1],ak);
+//        System.out.println("精度--->"+o[0]);
+//        System.out.println("维度--->"+o[1]);
+//        System.out.println("省份--->"+p[0]);
+//        System.out.println("城市--->"+p[1]);
+//        System.out.println("县/区--->"+p[2]);
+        new AdressTojd().doAddressToid("dR9SjyBtlRcbLGKGmbtcrdiYMM5CKKxw","岐山县枣林镇政府");
 
 
 
